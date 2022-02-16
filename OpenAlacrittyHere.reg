@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00
+
+; Directory\Background\shell
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Open Alacritty Here]
+@="Open Alacritty Here"
+"Icon"="C:\\Program Files\\Alacritty\\alacritty.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Open Alacritty Here\command]
+@="\"C:\\Program Files\\Alacritty\\alacritty.exe\" --option window.opacity=0.9 --working-directory \"%V\" --command \"C:\\Program Files\\Git\\bin\\bash.exe\""
+
+; Directory\shell
+
+[HKEY_CLASSES_ROOT\Directory\shell\Open Alacritty Here]
+@="Open Alacritty Here"
+"Icon"="C:\\Program Files\\Alacritty\\alacritty.exe"
+
+[HKEY_CLASSES_ROOT\Directory\shell\Open Alacritty Here\command]
+@="\"C:\\Program Files\\Alacritty\\alacritty.exe\" --option window.opacity=0.9 --working-directory \"%1\" --command \"C:\\Program Files\\Git\\bin\\bash.exe\""
